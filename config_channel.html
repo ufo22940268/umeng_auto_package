@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <h1>渠道配置</h1>
+            </div>
+
+            <div>
+                <textarea id="channel-field" name="" rows="3" style="width:100%" >{% if channels %} {{ ' '.join(channels) }} {% end %} </textarea>
+                <button id="update-channel" class="btn btn-primary">就它们了</button>
+            </div>
+
+            <dl>
+                <dt><span class="label">使用说明</span></dt>
+                <dd>在输入区域内输入全部渠道名，使用空格风格</dd>
+            </dl>
+
+            {% if channels %}
+            <dl>
+                <dt><h3>现有渠道</h3></dt>
+                <dd>
+                <ul>
+                    {% for channel in channels %}
+                    <li>{{ channel }}</li>
+                    {% end %}
+                </ul>
+                </dd>
+            </dl>
+            {% end %}
+        </div>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/config_channel.js"></script>
+    </body>
+</html>
