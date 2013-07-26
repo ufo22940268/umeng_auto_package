@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:id="@id/TextView_Alipay_Trade_Name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付宝信用还款" />
-    <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:gravity="right" android:id="@id/TextView_Alipay_Trade_Amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥550.00" android:layout_below="@id/TextView_Alipay_Trade_Name" />
-    <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:id="@id/TextView_Alipay_Trade_Time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" />
-    <TextView android:textSize="14.0sp" android:textColor="#ffff6600" android:gravity="right" android:id="@id/TextView_Alipay_Trade_Status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="等待还款中..." android:layout_below="@id/TextView_Alipay_Trade_Time" android:layout_alignParentRight="true" />
-</RelativeLayout>

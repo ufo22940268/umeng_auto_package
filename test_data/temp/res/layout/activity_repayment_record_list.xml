@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:background="@drawable/main_page_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include layout="@layout/layout_comm_title_only" />
-    <ListView android:id="@id/ListView_Repyment_Record_List" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:cacheColorHint="#00000000" android:divider="@drawable/alipay_divier_line" android:layout_below="@id/RelativeLayout_Ab_Title" />
-    <ProgressBar android:id="@id/ProgressBar" android:layout_width="25.0dip" android:layout_height="25.0dip" android:indeterminateDrawable="@drawable/dialog_progress_bg" android:layout_above="@id/TextView_Repayment_Record_Hint" android:layout_centerHorizontal="true" />
-    <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/TextView_Repayment_Record_Hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
-</RelativeLayout>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.zhangdan.preferential.widget.ExpandablePromDescriptionView android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.zhangdan.preferential.widget.PromDescriptionView android:id="@id/prom_des" android:layout_width="fill_parent" android:layout_height="@dimen/recommend_detail_min_des_height" />
-    <Button android:id="@id/more" android:background="@drawable/more_button" android:layout_width="40.0dip" android:layout_height="20.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:layout_below="@id/prom_des" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
-</com.zhangdan.preferential.widget.ExpandablePromDescriptionView>

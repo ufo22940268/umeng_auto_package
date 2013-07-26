@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:id="@id/Layout_Bg" android:background="@drawable/btn_mail_list" android:focusable="true" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip">
-        <TextView android:textSize="20.0sp" android:textColor="#ff33414a" android:id="@id/Tv_MailAccount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1231@qq.com" android:layout_alignParentLeft="true" />
-        <TextView android:textSize="12.0sp" android:textColor="#ffa1a2a4" android:id="@id/Tv_LastImport" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最近一次接收时间  2012/10/08 20:25" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
-        <ImageView android:id="@id/Img_Indictor" android:background="@drawable/mail_right_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-    </RelativeLayout>
-</RelativeLayout>

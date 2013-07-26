@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="@color/bg_menu" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_menu_height"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:id="@id/divider" android:background="@color/bg_orange" android:layout_width="50.0dip" android:layout_height="2.0dip" android:layout_alignParentTop="true" />
-    <View android:id="@id/selector" android:background="@color/bg_orange" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_below="@id/divider" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
-    <LinearLayout android:gravity="center_vertical" android:id="@id/bar" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/divider" android:layout_alignParentBottom="true" />
-</RelativeLayout>

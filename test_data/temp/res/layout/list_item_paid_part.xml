@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="13.0sp" android:textColor="@color/card_detail_item_text_gray_color" android:id="@id/TextView_Payed_Money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
-    <TextView android:textSize="13.0sp" android:textColor="@color/card_detail_item_text_gray_color" android:id="@id/TextView_Payed_Date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-    <Button android:textSize="12.0sp" android:textColor="@color/color_white" android:id="@id/Button_Payed_Delete" android:background="@drawable/btn_red_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/delete" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-</RelativeLayout>

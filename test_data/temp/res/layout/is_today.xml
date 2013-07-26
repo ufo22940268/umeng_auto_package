@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView android:textSize="12.0sp" android:textColor="@*android:color/white" android:background="@drawable/bg_week_of_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="每日"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

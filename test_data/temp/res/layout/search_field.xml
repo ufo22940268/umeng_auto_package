@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="30.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <EditText android:textColor="@*android:color/black" android:id="@id/edit_field" android:background="@drawable/mod_search_bar_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/two_state_button" android:layout_centerVertical="true" />
-    <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="6.0dip" android:src="@drawable/search_bar_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
-</RelativeLayout>

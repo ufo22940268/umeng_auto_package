@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/ImageView_Pop_Menu_Icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
-    <TextView android:id="@id/TextView_Pop_Menu_Content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_toRightOf="@id/ImageView_Pop_Menu_Icon" style="@style/PopMenu_Content_Large_Text_Style" />
-    <TextView android:id="@id/TextView_Pop_Menu_Content2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_toRightOf="@id/TextView_Pop_Menu_Content" android:layout_alignBottom="@id/TextView_Pop_Menu_Content" style="@style/PopMenu_Content_Small_Text_Style" />
-    <View android:layout_width="wrap_content" android:layout_height="1.0px" android:layout_marginTop="10.0dip" android:layout_below="@id/TextView_Pop_Menu_Content" />
-</RelativeLayout>

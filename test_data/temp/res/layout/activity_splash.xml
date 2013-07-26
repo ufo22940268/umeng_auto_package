@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="@drawable/splash_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">s
-<ImageView android:id="@id/ImageView_51logo" android:background="@drawable/icon_51logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="150.0dip" android:layout_centerHorizontal="true" />
-    <ProgressBar android:id="@id/ProgressBar_Import" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginTop="20.0dip" android:indeterminateDrawable="@drawable/dialog_progress_bg" android:layout_below="@id/ImageView_51logo" android:layout_centerHorizontal="true" />
-    <TextView android:textSize="10.0sp" android:textColor="#ff585f66" android:id="@id/TextView_Company_Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/company_ch" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
-</RelativeLayout>

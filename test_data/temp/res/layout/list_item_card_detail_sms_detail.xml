@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="@drawable/card_detail_list_item_middle" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="14.0sp" android:textColor="@color/card_detail_item_text_gray_color" android:id="@id/TextView_Card_Detail_Sms_Title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:text="短信未出账单" android:layout_toLeftOf="@id/TextView_Card_Detail_Sms_Amount" android:layout_alignParentLeft="true" />
-    <TextView android:textSize="14.0sp" android:textColor="@color/card_detail_item_text_gray_color" android:id="@id/TextView_Card_Detail_Sms_Amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:text="￥1000.00" android:layout_alignParentRight="true" />
-    <TextView android:textSize="10.0sp" android:textColor="#ffababab" android:id="@id/TextView_Card_Detail_Sms_Time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="3.0dip" android:text="[2012-03-05][3345]" android:layout_below="@id/TextView_Card_Detail_Sms_Title" />
-    <ImageView android:background="@drawable/blue_dash_line_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/TextView_Card_Detail_Sms_Time" />
-</RelativeLayout>

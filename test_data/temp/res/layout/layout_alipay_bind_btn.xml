@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/RelativeLayout_Bind_Alipay_Guide" android:background="@drawable/bind_alipay3" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <Button android:id="@id/Button_Bind_Alipay" android:background="@drawable/btn_bind_alipay_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
-</RelativeLayout>
