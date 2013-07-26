@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/LinearLayout_Dialog_Import" android:background="@drawable/btn_no_bill_import" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff663a00" android:id="@id/TextView_Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/detail_import_bill_auto" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/LinearLayout_Dialog_Hand_Input" android:background="@drawable/btn_no_bill_import" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff663a00" android:id="@id/TextView_Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/detail_import_bill_hand_input" />
+    </LinearLayout>
+</LinearLayout>

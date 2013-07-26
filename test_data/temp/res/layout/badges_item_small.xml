@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhangdan.preferential.widget.BadgeView android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="33.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/badge_card" android:layout_width="@dimen/popup_badge_header_size" android:layout_height="fill_parent">
+        <ImageView android:id="@id/badge_is_mine" android:layout_width="@dimen/popup_badge_tail_width" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/badge_is_mine" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ImageView android:layout_width="@dimen/popup_badge_header_size" android:layout_height="wrap_content" android:layout_marginBottom="-21.0dip" android:src="@drawable/badge_card" android:layout_above="@id/badge_is_mine" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/badge_activity" android:layout_width="@dimen/popup_badge_header_size" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/popup_badge_gap">
+        <ImageView android:id="@id/badge_is_today" android:layout_width="@dimen/popup_badge_tail_width" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/badge_is_today" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ImageView android:layout_width="@dimen/popup_badge_header_size" android:layout_height="wrap_content" android:layout_marginBottom="-21.0dip" android:src="@drawable/badge_activity" android:layout_above="@id/badge_is_today" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/badge_groupon" android:layout_width="@dimen/popup_badge_header_size" android:layout_height="@dimen/popup_badge_header_size" android:layout_marginLeft="@dimen/popup_badge_gap" android:layout_marginBottom="16.0dip" android:src="@drawable/badge_groupon" />
+    <ImageView android:id="@id/badge_ticket" android:layout_width="@dimen/popup_badge_header_size" android:layout_height="@dimen/popup_badge_header_size" android:layout_marginLeft="@dimen/popup_badge_gap" android:layout_marginBottom="16.0dip" android:src="@drawable/badge_ticket" />
+</com.zhangdan.preferential.widget.BadgeView>

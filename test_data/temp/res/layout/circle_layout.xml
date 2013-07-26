@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="160.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.zhangdan.app">
+    <org.taptwo.android.widget.ViewFlow android:id="@id/viewflow" android:layout_width="fill_parent" android:layout_height="fill_parent" app:sidebuffer="3" />
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/item_bank_service_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="#ff2b3f4c" android:id="@id/TextView_Bank_Service_Title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:text="人工服务" />
+    <ImageView android:id="@id/ImageView_Bank_Service_Lock" android:background="@drawable/bank_service_locked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="5.0dip" android:layout_toRightOf="@id/TextView_Bank_Service_Title" android:layout_alignBottom="@id/TextView_Bank_Service_Title" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff1085b7" android:id="@id/TextView_Bank_Service_Desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:text="拨打[10000]" android:layout_below="@id/TextView_Bank_Service_Title" />
+    <View android:visibility="invisible" android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" android:layout_below="@id/TextView_Bank_Service_Desc" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/detail_frame_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/mod_photo_frame_header" android:scaleType="fitXY" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/content" android:background="@*android:color/white" android:paddingLeft="6.0dip" android:paddingTop="2.0dip" android:paddingRight="6.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/header">
+        <com.zhangdan.preferential.widget.PhotoView android:id="@id/photo" android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="fitXY" android:layout_below="@id/header" />
+        <RelativeLayout android:id="@id/first_line" android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:layout_below="@id/photo">
+            <TextView android:textColor="@*android:color/black" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/CustomText" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/second_line" android:background="@*android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:layout_below="@id/first_line">
+            <ImageView android:id="@id/clock" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/clock_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:id="@id/time_range" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_toRightOf="@id/clock" android:layout_centerVertical="true" style="@style/CustomTextSmall" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/mod_photo_frame_tail" android:scaleType="fitXY" android:layout_below="@id/content" />
+</RelativeLayout>

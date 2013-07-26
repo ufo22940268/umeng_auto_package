@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/import_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/RelativeLayout_Title" android:background="@drawable/title_bar_dark" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/ab_import_title_with_options" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/RelativeLayout_Sms_Import_Bill" android:background="@drawable/sms_import_bottom_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/RelativeLayout_Sms_Search" android:background="@drawable/btn_import_start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_centerVertical="true">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:background="@drawable/sms_search" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查收短信账单" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ListView android:id="@id/ListView_Sms_Bill" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@null" android:layout_above="@id/RelativeLayout_Sms_Import_Bill" android:layout_below="@id/RelativeLayout_Title" />
+    <RelativeLayout android:id="@id/visisble_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="3.0dip" android:layout_above="@id/RelativeLayout_Sms_Import_Bill" android:layout_below="@id/RelativeLayout_Title">
+        <ImageView android:id="@id/image1" android:background="@drawable/no_his" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="木有找到相关信息" android:layout_below="@id/image1" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView android:id="@id/TextView_Sms_Hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在搜索中。。。" android:layout_above="@id/RelativeLayout_Sms_Import_Bill" android:layout_centerHorizontal="true" />
+</RelativeLayout>

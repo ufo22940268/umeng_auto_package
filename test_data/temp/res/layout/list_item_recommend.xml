@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhangdan.preferential.widget.DividerFrameView android:background="@color/bg_above" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/divider" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="@integer/weight_of_left_part">
+            <ImageView android:id="@id/icon" android:background="@drawable/bank_back_large" android:padding="3.0dip" android:layout_width="@dimen/icon_size_large" android:layout_height="@dimen/icon_size_large" android:layout_marginTop="@dimen/bank_outer_padding" android:src="@drawable/detail_icon_dianping" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="11.0dip" android:layout_weight="@integer/weight_of_right_part">
+            <ImageView android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/mod_photo_frame_header" android:scaleType="fitXY" android:layout_alignParentTop="true" />
+            <include android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/header" layout="@layout/list_item_recommend_content" />
+            <ImageView android:id="@id/bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/mod_photo_frame_tail" android:scaleType="fitXY" android:layout_below="@id/content" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.zhangdan.preferential.widget.DividerFrameView>

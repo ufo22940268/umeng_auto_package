@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/import_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/RelativeLayout_Title" android:background="@drawable/title_bar_dark" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/Button_Back" android:background="@drawable/btn_xx_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_white" android:id="@id/TextView_Title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/credit_card_bank" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/ListView" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/item_blue_selector" android:cacheColorHint="#00000000" android:divider="@drawable/import_division_horizontal" android:layout_above="@id/RelativeLayout_Bottom" android:layout_below="@id/RelativeLayout_Title" />
+    <RelativeLayout android:id="@id/RelativeLayout_Bottom" android:background="@drawable/card_detail_foot_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff925c0c" android:id="@id/Button_Choose_Bank_Confirm" android:background="@drawable/btn_no_bill_import" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="5.0dip" android:text="@string/input_other_bank_confirm" android:layout_alignParentRight="true" />
+        <EditText android:textSize="14.0sp" android:id="@id/EditText_Choose_Bank_Other_Bank" android:background="@drawable/input_box_bottom" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:hint="@string/manual_input_other_bank_hint" android:singleLine="true" android:layout_toLeftOf="@id/Button_Choose_Bank_Confirm" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/RelativeLayout_First_Login_Mail_Content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/RelativeLayout_First_Login_Direct"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.zhangdan.app">
+    <RelativeLayout android:id="@id/Layout_Cut_Scenes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/LinearLayout_Bottom">
+        <ImageView android:id="@id/ImageView_Ref" android:background="@drawable/mail_import_desc1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <org.taptwo.android.widget.ViewFlow android:layout_gravity="center_horizontal" android:id="@id/ViewFlow_Cut_Scenes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignLeft="@id/ImageView_Ref" android:layout_alignTop="@id/ImageView_Ref" android:layout_alignRight="@id/ImageView_Ref" android:layout_alignBottom="@id/ImageView_Ref" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout_Bottom" android:paddingLeft="40.0dip" android:paddingRight="40.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.zhangdan.app.widget.EmailEditText android:textSize="12.0sp" android:textColor="@color/color_white" android:id="@id/EditText_Mail_Account" android:background="@drawable/editext_mail_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:hint="@string/mail_login_account_hint" android:singleLine="true" />
+        <EditText android:textSize="12.0sp" android:textColor="@color/color_white" android:id="@id/EditText_Mail_Pwd" android:background="@drawable/editext_mail_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:hint="@string/mail_login_pwd_hint" android:singleLine="true" android:inputType="textPassword" />
+        <RelativeLayout android:id="@id/RelativeLayout_Import_User_Agreement" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/CheckBox_Import_User_Agreement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/checkbox" android:text="@string/agree_user_agreement" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/TextView_Import_Read_UserAgreement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/read_user_agreement" android:layout_alignTop="@id/CheckBox_Import_User_Agreement" android:layout_alignBottom="@id/CheckBox_Import_User_Agreement" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/RelativeLayout_Import_Login" android:background="@drawable/btn_import_start" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ImageView_Imort_Login_Icon" android:background="@drawable/checkbox_import_start_icon_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/TextView_Import_Login" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0sp" android:textColor="#ff5c656c" android:id="@id/TextView_Import_Login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/start_import_bill" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

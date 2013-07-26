@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/main_page_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/RelativeLayout_Title" android:background="@drawable/title_bar_blue" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/Button_Remark_Cancel" android:background="@drawable/btn_xx_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit_remark" android:layout_centerInParent="true" />
+        <Button android:id="@id/Button_Remark_Save" android:background="@drawable/btn_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout_Remark_Edit_Content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/RelativeLayout_Title">
+        <LinearLayout android:gravity="center_vertical" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remark_original" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/TextView_Remark_Original_Content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/LinearLayout_Remark_Store_Name" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remark_modify" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/TextView_Remark_Modify_Store_Name" android:background="@drawable/inputbox_with_dropdown_icon" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/remark_store_name_hint" />
+        </LinearLayout>
+        <LinearLayout android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remark_category" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/TextView_Remark_Category" android:background="@drawable/inputbox_with_dropdown_icon" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remark" />
+            <EditText android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/EditText_Remark_Content" android:background="@drawable/edit_deep_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/LinearLayout_Remark_Edit" android:background="#ff259ed3" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/RelativeLayout_Title" android:layout_alignBottom="@id/RelativeLayout_Title">
+        <EditText android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/EditText_Remark_Top_Store_Name" android:background="@drawable/edit_light_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+        <Button android:textSize="14.0sp" android:textColor="#ff663a00" android:id="@id/Button_Remark_Top_Confirm" android:background="@drawable/btn_no_bill_import" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:text="@string/ok" />
+    </LinearLayout>
+    <ListView android:id="@id/ListView_Remark" android:visibility="gone" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/remark_store_list_selector" android:cacheColorHint="#00000000" android:layout_below="@id/RelativeLayout_Title" />
+</RelativeLayout>

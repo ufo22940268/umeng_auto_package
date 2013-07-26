@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/RelativeLayout_Bind_Alipay_Guide" android:background="#99000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ImageView_Size_Ref" android:background="@drawable/bind_alipay3" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@id/ViewPager" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/ImageView_Size_Ref" android:layout_alignTop="@id/ImageView_Size_Ref" android:layout_alignRight="@id/ImageView_Size_Ref" android:layout_alignBottom="@id/ImageView_Size_Ref" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout_Circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/ImageView_Size_Ref" android:layout_centerHorizontal="true">
+        <ImageView android:background="@drawable/circle_enabled" android:layout_width="10.0dip" android:layout_height="10.0dip" />
+        <ImageView android:background="@drawable/circle_normal" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <ImageView android:background="@drawable/circle_normal" android:layout_width="10.0dip" android:layout_height="10.0dip" />
+    </LinearLayout>
+</RelativeLayout>

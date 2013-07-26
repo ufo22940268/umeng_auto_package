@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/shopping_blue" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/TextView_Shopping_Title" android:background="@drawable/shopping_month_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="2012年12月" />
+</LinearLayout>

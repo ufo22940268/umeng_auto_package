@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dark_page_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/RelativeLayout_Sms_Search_Top" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageView android:id="@id/ImageView_Sms_Import_Icon" android:background="@drawable/bar_title_icon_bg" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:src="@drawable/img_sms_import" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="搜索记录" android:layout_toRightOf="@id/ImageView_Sms_Import_Icon" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/color_white" android:id="@id/TextView_Sms_Import_Sum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="搜索记录" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/import_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="22.0sp" android:textColor="@color/sms_import_color" android:id="@id/TextView_Sms_Import_Num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="1.  导入银行短信" />
+        <TextView android:textSize="22.0sp" android:textColor="@color/sms_import_color" android:id="@id/TextView_Sms_Import_Mail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" android:text="2.  导入账单邮件" android:layout_alignParentBottom="true" />
+        <LinearLayout android:orientation="horizontal" android:background="#ff303e49" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="3.0dip" android:layout_above="@id/TextView_Sms_Import_Mail" android:layout_below="@id/TextView_Sms_Import_Num">
+            <RelativeLayout android:layout_width="30.0dip" android:layout_height="30.0dip">
+                <ImageView android:id="@id/ImageView_Import_Complete" android:background="@drawable/recive_finished" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                <ProgressBar android:id="@id/ProgressBar_Import" android:layout_width="25.0dip" android:layout_height="25.0dip" android:indeterminateDrawable="@drawable/dialog_progress_bg" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <ListView android:id="@id/ListView_Sms_Import_process" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@null" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

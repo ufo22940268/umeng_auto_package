@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.slidingmenu.lib.SlidingMenu android:id="@id/slidingmenumain" android:layout_width="fill_parent" android:layout_height="fill_parent" sliding:behindOffset="50.0dip" sliding:behindScrollScale="0.0" sliding:touchModeAbove="fullscreen" sliding:touchModeBehind="margin"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sliding="http://schemas.android.com/apk/res/com.zhangdan.app" />

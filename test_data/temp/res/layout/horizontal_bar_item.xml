@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="74.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@*android:color/black" android:gravity="center" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/circle" android:padding="6.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/today_circle" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

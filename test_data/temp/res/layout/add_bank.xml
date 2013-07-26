@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bg_detail" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_height" layout="@layout/title_bar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/title_bar" android:layout_alignParentBottom="true">
+        <com.gridlayout.GridLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true" gridlayout:alignmentMode="alignBounds" gridlayout:columnCount="3" gridlayout:columnOrderPreserved="false"
+          xmlns:gridlayout="http://schemas.android.com/apk/res/com.zhangdan.app" />
+    </ScrollView>
+</RelativeLayout>

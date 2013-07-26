@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhangdan.preferential.widget.IconTagView android:orientation="vertical" android:layout_width="119.0dip" android:layout_height="@dimen/tag_fragment_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/icon" android:layout_width="23.0dip" android:layout_height="23.0dip" />
+        <TextView android:textColor="@color/font_menu_color" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@color/bg_layer" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+</com.zhangdan.preferential.widget.IconTagView>

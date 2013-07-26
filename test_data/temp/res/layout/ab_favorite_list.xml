@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/RelativeLayout_Title" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.zhangdan.app">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ab_left" android:background="@drawable/ab_item_bg" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:background="@drawable/ab_left_indicator_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/icon" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ab_category_selector" android:background="@drawable/ab_item_bg" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/ab_left">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的收藏" />
+    </LinearLayout>
+</RelativeLayout>

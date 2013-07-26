@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/RelativeLayout_Title" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.zhangdan.app">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/RelativeLayout_ab_Account" android:background="@drawable/ab_item_bg" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:background="@drawable/ab_left_indicator_dark" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.zhangdan.app.widget.AvatarView android:id="@id/ImageView_Ab_Avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" app:avatar_default="@drawable/avatar_default" app:avatar_background="@drawable/ab_avatar_bg" app:avatar_padding="2.0dip" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip">
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/LinearLayout_Ab_UserName" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/color_white" android:id="@id/TextView_Ab_UserName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_app_name" />
+                <ImageView android:background="@drawable/ab_dropdown_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" />
+                <ImageView android:id="@id/ImageView_Ab_Update" android:background="@drawable/ab_icon_update" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_white" android:id="@id/TextView_Ab_Account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_white" android:gravity="center" android:id="@id/TextView_Ab_City" android:background="@drawable/ab_item_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="杭州" android:layout_alignParentRight="true" />
+    <ImageView android:background="@drawable/ab_vertical_divider" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/TextView_Ab_City" />
+</RelativeLayout>

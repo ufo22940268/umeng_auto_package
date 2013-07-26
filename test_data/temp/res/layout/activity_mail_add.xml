@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/import_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/RelativeLayout_Title" android:background="@drawable/title_bar_dark" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/Button_Back" android:background="@drawable/btn_xx_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_white" android:id="@id/TextView_Title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/import_add_mail_title" android:layout_centerInParent="true" />
+        <LinearLayout android:id="@id/LinearLayout_Help" android:background="@drawable/ab_item_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <ImageView android:background="@drawable/icon_help" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ViewStub android:id="@id/ViewStub_Mail_Import_Auto" android:layout="@layout/layout_mail_import_auto" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/RelativeLayout_Title" />
+</RelativeLayout>

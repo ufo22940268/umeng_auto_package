@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="300.0dip" android:layout_height="400.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/RelativeLayout_Title" android:background="@drawable/dialog_top_bg_red" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/Button_Back" android:background="@drawable/btn_dialog_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/color_white" android:id="@id/TextView_Dialog_Title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/sigma_bill_amount" android:layout_toRightOf="@id/Button_Back" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dialog_content_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <ImageView android:id="@id/ImageView_Icon" android:background="@drawable/icon_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff0b0b0b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/sigma_curr_bill_sum" android:layout_toRightOf="@id/ImageView_Icon" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff0b0b0b" android:id="@id/TextView_Dialog_CurrBillSum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="￥200000.00" android:layout_toLeftOf="@id/ImageView_Icon_Foreign_Currency_1" />
+            <ImageView android:id="@id/ImageView_Icon_Foreign_Currency_1" android:background="@drawable/icon_foreign_currency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ImageView_Icon" android:background="@drawable/icon_sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff0b0b0b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/sigma_have_paid" android:layout_toRightOf="@id/ImageView_Icon" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff0b0b0b" android:id="@id/TextView_Dialog_CurrPaid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="￥200000.00" android:layout_toLeftOf="@id/ImageView_Icon_Foreign_Currency_2" />
+            <ImageView android:id="@id/ImageView_Icon_Foreign_Currency_2" android:background="@drawable/icon_foreign_currency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:background="@drawable/alipay_divier_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <RelativeLayout android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ImageView_Icon" android:background="@drawable/icon_equal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff0b0b0b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/sigma_unpaid" android:layout_toRightOf="@id/ImageView_Icon" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff0b0b0b" android:id="@id/TextView_Dialog_CurrUnpaid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="￥200000.00" android:layout_toLeftOf="@id/ImageView_Icon_Foreign_Currency_3" />
+            <ImageView android:id="@id/ImageView_Icon_Foreign_Currency_3" android:background="@drawable/icon_foreign_currency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:background="@drawable/alipay_divier_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <RelativeLayout android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ImageView_Icon" android:background="@drawable/icon_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff0b0b0b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/sigma_unknow_bill" android:layout_toRightOf="@id/ImageView_Icon" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff0b0b0b" android:id="@id/TextView_Dialog_Unknow_Bill_Amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥200000.00" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <ImageView android:background="@drawable/dash_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <RelativeLayout android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ImageView_Icon" android:background="@drawable/icon_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff0b0b0b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/sigma_total_credit_limit" android:layout_toRightOf="@id/ImageView_Icon" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff0b0b0b" android:id="@id/TextView_Dialog_Total_Limit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥200000.00" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <ImageView android:background="@drawable/dash_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <RelativeLayout android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ImageView_Icon" android:background="@drawable/icon_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff0b0b0b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/sigma_avail_limit" android:layout_toRightOf="@id/ImageView_Icon" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff0b0b0b" android:id="@id/TextView_Dialog_Avail_Limit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥200000.00" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <ImageView android:background="@drawable/dash_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    </LinearLayout>
+</LinearLayout>

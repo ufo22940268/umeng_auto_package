@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/card_detail_list_item_middle" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/card_detail_deep_blue_full_line_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    <TextView android:textSize="28.0sp" android:textColor="@color/card_detail_item_text_blue_color" android:id="@id/TextView_Card_Detail_Title_Month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" />
+    <TextView android:textColor="@color/card_detail_item_text_blue_color" android:id="@id/TextView_Card_Detail_Title_Month_Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/month" android:layout_toRightOf="@id/TextView_Card_Detail_Title_Month" android:layout_alignBaseline="@id/TextView_Card_Detail_Title_Month" />
+    <TextView android:textSize="28.0sp" android:textColor="@color/card_detail_item_text_blue_color" android:id="@id/TextView_Card_Detail_Bill_Title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/card_detail_bill_detail_title" android:layout_centerHorizontal="true" />
+    <ImageView android:background="@drawable/card_detail_blue_full_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_below="@id/TextView_Card_Detail_Bill_Title" />
+</RelativeLayout>

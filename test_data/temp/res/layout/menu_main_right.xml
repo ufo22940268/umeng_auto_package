@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/main_page_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <za.co.immedia.pinnedheaderlistview.PinnedHeaderListView android:id="@id/ListView" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/menu_list_selector" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0.0px" />
+</RelativeLayout>

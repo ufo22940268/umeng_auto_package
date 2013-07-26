@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tag3" style="@style/ItemTag" />
+    <TextView android:id="@id/tag2" style="@style/ItemTag" />
+    <TextView android:id="@id/tag1" style="@style/ItemTag" />
+</LinearLayout>

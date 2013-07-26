@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/import_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_comm_title_only" />
+    <include android:id="@id/Edit_Item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/RelativeLayout_Ab_Title" layout="@layout/all_sms_item" />
+    <RelativeLayout android:id="@id/RelativeLayout_Cost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_below="@id/Edit_Item" android:layout_alignLeft="@id/Edit_Item">
+        <RelativeLayout android:id="@id/RelativeLayout_Type" android:background="@drawable/btn_sms_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/Image_Icon" android:background="@drawable/icon_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_centerVertical="true" />
+            <TextView android:textColor="@color/color_black" android:id="@id/TextView_Type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="消费" android:layout_toRightOf="@id/Image_Icon" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/RelativeLayout_RMB_Money" android:background="@drawable/btn_sms_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/RelativeLayout_Type">
+            <TextView android:id="@id/TextView_RMB_Money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="消费" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/RelativeLayout_us_Money" android:background="@drawable/btn_sms_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/RelativeLayout_RMB_Money">
+            <TextView android:id="@id/TextView_us_Money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="消费" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/RelativeLayout_Bottom" android:background="@drawable/card_detail_foot_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16.0sp" android:textColor="@color/color_white" android:id="@id/TextView_Payed_All" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_centerVertical="true" />
+        <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff925c0c" android:id="@id/Button_Upload" android:background="@drawable/btn_no_bill_import" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="5.0dip" android:text="提交" android:layout_alignParentRight="true" />
+        <EditText android:id="@id/EditText_Pay" android:background="@drawable/input_box_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxLength="9" android:layout_toLeftOf="@id/Button_Upload" android:layout_toRightOf="@id/TextView_Payed_All" android:layout_centerVertical="true" android:inputType="numberDecimal" />
+    </RelativeLayout>
+</RelativeLayout>

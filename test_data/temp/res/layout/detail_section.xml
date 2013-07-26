@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/bg_detail_content" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/left_part" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="@integer/weight_of_left_part">
+        <View android:background="@color/white" android:layout_width="3.0dip" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/left_icon" android:layout_width="31.0dip" android:layout_height="31.0dip" android:layout_marginTop="13.0dip" android:src="@drawable/detail_icon_location" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="@integer/weight_of_right_part">
+        <FrameLayout android:id="@id/right_part" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/divider" android:layout_width="fill_parent" android:layout_height="2.0px" android:src="@drawable/detail_seperator" android:scaleType="fitXY" android:layout_below="@id/right_part" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

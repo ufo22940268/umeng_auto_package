@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/import_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/RelativeLayout_Title" android:background="@drawable/title_bar_dark" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/ab_import_title_with_options" />
+    </RelativeLayout>
+    <ViewStub android:id="@id/ViewStub_Mail_Import_Auto" android:layout="@layout/layout_mail_import_auto" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/RelativeLayout_Title" />
+    <ViewStub android:id="@id/ViewStub_Mail_Import_Manual" android:layout="@layout/layout_mail_import_manual" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/RelativeLayout_Title" />
+</RelativeLayout>

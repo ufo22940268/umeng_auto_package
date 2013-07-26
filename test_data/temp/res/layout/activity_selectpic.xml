@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/main_page_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ImageView_Sel_Big" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/RelativeLayout_Sel_His_Head" android:background="@drawable/title_bar_blue" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/Button_Sel_His_Back" android:background="@drawable/btn_xx_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_white" android:id="@id/TextView_Sel_His_Title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更换背景" android:layout_centerInParent="true" />
+        <Button android:id="@id/Button_Sel_His_Save" android:background="@drawable/btn_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/main_page_bg" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="200.0dip">
+        <GridView android:gravity="center_horizontal" android:id="@id/GridView_Sel_Pic" android:background="@drawable/main_page_bg" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:horizontalSpacing="20.0dip" android:verticalSpacing="15.0dip" android:stretchMode="columnWidth" android:columnWidth="140.0dip" android:numColumns="2" />
+    </RelativeLayout>
+</RelativeLayout>

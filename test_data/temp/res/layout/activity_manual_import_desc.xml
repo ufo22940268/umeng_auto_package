@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/import_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/RelativeLayout_Title" android:background="@drawable/title_bar_dark" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/Button_Back" android:background="@drawable/btn_xx_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_white" android:id="@id/TextView_Title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/import_manual_title" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_white" android:gravity="center_vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/import_manual_desc1" />
+            <ImageView android:background="@drawable/import_division_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff253e52" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/import_manual_desc2" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff253e52" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/import_manual_desc3" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff253e52" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/import_manual_desc4" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffffcc04" android:id="@id/TextView_Manual_51Account" android:background="@drawable/edittext_mail_unselected_bg" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:text="" />
+            <RelativeLayout android:id="@id/RelativeLayout_Manual_Copy" android:background="@drawable/btn_import_start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="18.0sp" android:textColor="#ff244153" android:id="@id/TextView_Manual_MailName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/import_copy_mail_name" android:layout_centerInParent="true" />
+                <ImageView android:background="@drawable/icon_copy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/TextView_Manual_MailName" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/manual_import_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

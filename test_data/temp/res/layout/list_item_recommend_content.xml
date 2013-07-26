@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:paddingLeft="4.0dip" android:paddingTop="4.0dip" android:paddingRight="4.0dip" android:paddingBottom="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhangdan.preferential.widget.PhotoView android:id="@id/photo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_alignParentTop="true" />
+    <TextView android:textSize="16.0sp" android:textColor="#ff656565" android:gravity="center_vertical" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="@dimen/list_height_small" android:singleLine="true" android:layout_below="@id/photo" android:layout_alignWithParentIfMissing="true" />
+    <RelativeLayout android:id="@id/second_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/description">
+        <com.zhangdan.preferential.widget.CustomStarView android:id="@id/star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/week_tags" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/star" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/clock" android:layout_width="@dimen/icon_size_small" android:layout_height="@dimen/icon_size_small" android:layout_marginTop="3.0dip" android:src="@drawable/clock_icon" android:layout_below="@id/second_line" android:layout_alignParentLeft="true" />
+    <TextView android:gravity="center_vertical" android:id="@id/time_range" android:layout_width="wrap_content" android:layout_height="@dimen/icon_size_small" android:layout_marginLeft="3.0dip" android:layout_marginBottom="4.0dip" android:layout_toRightOf="@id/clock" android:layout_below="@id/second_line" />
+</RelativeLayout>

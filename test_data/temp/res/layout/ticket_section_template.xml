@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/list_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/dingding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="40.0dip">
+        <ImageView android:id="@id/icon" android:layout_width="@dimen/icon_size" android:layout_height="@dimen/icon_size" />
+        <TextView android:textColor="@color/bg_orange" android:gravity="center" android:id="@id/count" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" />
+        <TextView android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:text="@string/zhang" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/dianping" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="40.0dip">
+        <ImageView android:id="@id/icon" android:layout_width="@dimen/icon_size" android:layout_height="@dimen/icon_size" />
+        <TextView android:textColor="@color/bg_orange" android:gravity="center" android:id="@id/count" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" />
+        <TextView android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:text="@string/zhang" />
+    </LinearLayout>
+</LinearLayout>

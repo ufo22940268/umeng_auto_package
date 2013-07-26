@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/RelativeLayout_Title" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.zhangdan.app">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/LinearLayout_Ab_Left_Indicator" android:background="@drawable/ab_item_bg" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:background="@drawable/ab_left_indicator_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.zhangdan.app.widget.AvatarView android:id="@id/ImageView_Ab_Avatar" android:layout_width="1.0dip" android:layout_height="wrap_content" app:avatar_default="@drawable/avatar_default" app:avatar_background="@drawable/ab_avatar_bg" app:avatar_padding="2.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/LinearLayout_Ab_Main_Page" android:background="@drawable/ab_item_bg" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/LinearLayout_Ab_Left_Indicator">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_white" android:id="@id/TextView_Ab_Main_Page" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ab_main_page" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/ImageView_Ab_DropDown" android:background="@drawable/ab_dropdown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/TextView_Ab_Main_Page" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/TextView_Ab_Notice_Counter" android:background="@drawable/img_counter_bg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="0" android:layout_alignRight="@id/ImageView_Ab_DropDown" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/LinearLayout_Ab_Main_Refresh" android:background="@drawable/ab_item_bg" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/ImageView_Ab_Main_Refresh" android:background="@drawable/ab_main_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:id="@id/ImageView_Ab_Main_Divider1" android:background="@drawable/ab_vertical_divider" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/LinearLayout_Ab_Main_Refresh" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/LinearLayout_Ab_Main_Sigma" android:background="@drawable/ab_item_bg" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/ImageView_Ab_Main_Divider1">
+        <ImageView android:background="@drawable/ab_main_sigma" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:id="@id/ImageView_Ab_Main_Divider2" android:background="@drawable/ab_vertical_divider" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/LinearLayout_Ab_Main_Sigma" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/LinearLayout_Ab_Main_Free_Interest" android:background="@drawable/ab_item_bg" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/ImageView_Ab_Main_Divider2">
+        <ImageView android:background="@drawable/ab_main_free_interest" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

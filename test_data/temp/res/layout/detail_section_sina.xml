@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginRight="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/bg_weibo_poi_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/badges" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:background="@drawable/bg_weibo_poi_middle" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/arrow" android:layout_width="42.0dip" android:layout_height="wrap_content" android:src="@drawable/weibo_poi_arrow" android:scaleType="fitCenter" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/bg_weibo_poi_bottom" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:animateLayoutChanges="true">
+        <ImageView android:id="@id/photo" android:layout_width="80.0dip" android:layout_height="80.0dip" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+        <TextView android:id="@id/comment" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/photo" android:layout_alignParentLeft="true" android:animateLayoutChanges="true" />
+    </RelativeLayout>
+</LinearLayout>

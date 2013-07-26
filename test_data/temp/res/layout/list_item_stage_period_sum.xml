@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:id="@id/TextView_Stage_Date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:text="2013/04" android:layout_toRightOf="@id/ImageView_Stage_Color_Block" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:id="@id/TextView_Stage_Bill_Amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="10.0dip" android:text="黄小强[0456]" android:layout_toRightOf="@id/TextView_Stage_Date" android:layout_centerVertical="true" />
+</RelativeLayout>

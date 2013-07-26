@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/main_page_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/RelativeLayout_Title" android:background="@drawable/title_bar_blue" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/Button_Back" android:background="@drawable/btn_xx_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_white" android:id="@id/TextView_Title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/guide_bank_tel" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/RelativeLayout_Title">
+        <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout_Bank_Service_Setting_Content" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </ScrollView>
+</RelativeLayout>

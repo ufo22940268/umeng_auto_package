@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/RelativeLayout_Consume_Category" android:background="@drawable/main_page_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout_Title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/RelativeLayout_Consume_Category_User" android:background="@drawable/chart_layout_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/ImageView_Icon" android:background="@drawable/chart_icon_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:id="@id/TextView_Chart_UserName" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/ImageView_Icon" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/ImageView_Chart_UserName_Dropdown" android:background="@drawable/ab_dropdown_smal_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/RelativeLayout_Consume_Category_Time" android:background="@drawable/chart_layout_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/ImageView_Icon" android:background="@drawable/chart_icon_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:id="@id/TextView_Chart_Year" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/ImageView_Icon" android:layout_centerVertical="true" />
+            <ImageView android:background="@drawable/ab_dropdown_smal_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ListView android:id="@id/ListView_Chart" android:paddingBottom="10.0dip" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@*android:color/transparent" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0.0px" android:layout_below="@id/LinearLayout_Title" android:fastScrollEnabled="true" />
+    <TextView android:background="#ff999999" android:layout_width="2.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+</RelativeLayout>

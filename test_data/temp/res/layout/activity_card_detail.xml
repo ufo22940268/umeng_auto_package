@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/RelativeLayout_Card_Detail" android:background="@drawable/main_page_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/RelativeLayout_Card_Detail_Head" android:background="@drawable/title_bar_blue" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/LinearLayout_Ab_Left_Indicator" android:background="@drawable/ab_item_bg" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:background="@drawable/ab_left_indicator_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:background="@drawable/icon" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_white" android:id="@id/TextView_Ab_Title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/LinearLayout_Card_Detail_More" android:background="@drawable/ab_item_bg" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <ImageView android:background="@drawable/card_detial_more_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.zhangdan.preferential.widget.VerticalListView android:id="@id/ListView_Card_Detail_Bill" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="3.0dip" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@null" android:layout_above="@id/RelativeLayout_Card_Detail_Bottom" android:layout_below="@id/RelativeLayout_Card_Detail_Head" />
+    <RelativeLayout android:id="@id/RelativeLayout_Card_Detail_Bottom" android:background="@drawable/card_detail_foot_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageButton android:id="@id/ImageButton_Card_Detail_Tel" android:background="@drawable/btn_card_foot_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/ImageView_Card_Detail_Split1" android:background="@drawable/card_detail_foot_split" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_toRightOf="@id/ImageButton_Card_Detail_Tel" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/ImageButton_Card_Detail_Pay" android:background="@drawable/btn_card_detail_pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/ImageView_Card_Detail_Split2" android:background="@drawable/card_detail_foot_split" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:layout_toLeftOf="@id/ImageButton_Card_Detail_Pay" android:layout_centerVertical="true" />
+        <RelativeLayout android:gravity="center" android:id="@id/RelativeLayout_Card_Detail_Foot_Content_expression" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/ImageView_Card_Detail_Split2" android:layout_toRightOf="@id/ImageView_Card_Detail_Split1" android:layout_centerVertical="true">
+            <ImageView android:id="@id/ImageView_Card_Detail_Foot_Content_expression" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/card_detail_yellow" android:id="@id/TextView_Card_Detail_Foot_Content" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="未还款" android:layout_toRightOf="@id/ImageView_Card_Detail_Foot_Content_expression" android:layout_centerVertical="true" />
+            <ImageView android:background="@drawable/card_detail_content_tri" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/TextView_Card_Detail_Foot_Content" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ViewStub android:id="@id/ViewStub_Bind_Alipay_Guide" android:layout="@layout/layout_bind_alipay_guide" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

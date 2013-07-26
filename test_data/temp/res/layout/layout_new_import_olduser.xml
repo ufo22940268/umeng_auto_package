@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/RelativeLayout_First_Login_OldUser_Content" android:background="@drawable/splash_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/RelativeLayout_First_Login_OldUser_Ref"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/LinearLayout_Login">
+        <ImageView android:id="@id/ImageView_51logo" android:background="@drawable/icon_51logo" android:layout_width="146.25dip" android:layout_height="76.5dip" android:layout_marginTop="40.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/LinearLayout_Login" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginBottom="15.0dip" android:layout_above="@id/TextView_Company_Name">
+        <Button android:id="@id/Button_Login_Weibo" android:background="@drawable/btn_weibo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Button android:id="@id/Button_Login_qq" android:background="@drawable/btn_qq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <Button android:id="@id/Button_Login_51" android:background="@drawable/btn_51" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+        <Button android:id="@id/Button_Login_Tencent_Weibo" android:background="@drawable/btn_tencent_weibo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textSize="10.0sp" android:textColor="#ff585f66" android:id="@id/TextView_Company_Name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/company_ch" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>
