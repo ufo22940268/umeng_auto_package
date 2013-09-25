@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/banner" />
+    <TableLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:stretchColumns="2" android:layout_weight="1.0">
+        <TableRow>
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/mobile_icon" />
+            <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="手机号" />
+            <EditText android:textColor="@color/blue" android:layout_gravity="center_vertical" android:id="@id/tel" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        </TableRow>
+        <View android:background="@color/gray" android:layout_height="1.0dip" android:layout_marginTop="3.0dip" />
+        <TableRow android:layout_marginTop="10.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/person_icon" />
+            <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="姓名" />
+            <EditText android:textColor="@color/blue" android:layout_gravity="center_vertical" android:id="@id/name" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        </TableRow>
+        <View android:background="@color/gray" android:layout_height="1.0dip" android:layout_marginTop="3.0dip" />
+    </TableLayout>
+</LinearLayout>

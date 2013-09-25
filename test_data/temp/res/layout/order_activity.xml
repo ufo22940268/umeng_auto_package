@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fffff7e4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/banner" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/content" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:padding="6.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="6.0">
+                        <TextView android:gravity="left" android:id="@id/ticket_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/TextAppearance.Medium" />
+                        <TextView android:textSize="8.0sp" android:gravity="left" android:id="@id/ticket_constraint" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/TextAppearance.Small" />
+                    </LinearLayout>
+                    <View android:background="@drawable/dash" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="2.0dip" android:layout_height="fill_parent" />
+                    <RelativeLayout android:padding="6.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+                        <TextView android:textStyle="bold" android:textColor="@color/orange" android:gravity="center" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@android:style/TextAppearance.Large" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@id/row_date_picker" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" style="@style/order_row">
+                    <FrameLayout android:paddingLeft="12.0dip" android:paddingTop="3.0dip" android:paddingRight="13.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/calendar_icon" />
+                    </FrameLayout>
+                    <View android:background="#ffe3e1de" android:paddingTop="4.0dip" android:paddingBottom="3.0dip" android:layout_width="2.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center_vertical" android:id="@id/date_picker" android:background="#ffffffff" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="选择游玩日期" android:layout_weight="1.0" />
+                    <TextView android:textColor="@color/blue" android:layout_gravity="center_vertical" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/arrow_icon" android:drawablePadding="6.0dip" />
+                </LinearLayout>
+                <View android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <FrameLayout android:id="@id/ticket_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TableLayout android:background="@drawable/tickets_cell_post" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                    <TableRow android:padding="6.0dip">
+                        <TextView android:text="支付方式" android:layout_weight="1.0" />
+                        <TextView android:id="@id/pay_method" android:text="景点到付" />
+                    </TableRow>
+                    <View android:background="@color/gray" android:layout_height="1.0dip" />
+                    <TableRow android:padding="6.0dip">
+                        <TextView android:id="@id/view_tips" android:text="查看并接受预定须知" android:drawableRight="@drawable/grap_right_arrow" android:layout_weight="1.0" />
+                        <CheckBox android:id="@id/contract_cb" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+            <View android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:background="@color/blue" android:padding="6.0dip" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="6.0">
+            <TextView android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单金额: " style="@android:style/TextAppearance.Large" />
+            <TextView android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/order_price" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/TextAppearance.Large" />
+        </LinearLayout>
+        <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/submit" android:background="@color/orange" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="提交订单" android:layout_weight="2.0" style="@android:style/TextAppearance.Large" />
+    </LinearLayout>
+</LinearLayout>

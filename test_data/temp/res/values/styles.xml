@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CalendarTitle">
+        <item name="android:textSize">@dimen/calendar_text_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/calendar_text_active</item>
+    </style>
+    <style name="CalendarCell">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+    <style name="CalendarCell.DayHeader" parent="@style/CalendarCell">
+        <item name="android:textSize">@dimen/calendar_text_small</item>
+        <item name="android:textColor">@color/calendar_text_active</item>
+    </style>
+    <style name="CalendarCell.CalendarDate" parent="@style/CalendarCell">
+        <item name="android:textSize">@dimen/calendar_text_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/calendar_text_selector</item>
+        <item name="android:background">@drawable/calendar_bg_selector</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="Theme.PageIndicatorDefaults" parent="@*android:style/Theme">
+        <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
+    </style>
+    <style name="Theme.Light.NoTitleBar.PageIndicatorDefaults" parent="@*android:style/Theme.Light.NoTitleBar">
+        <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
+    </style>
+    <style name="Widget" />
+    <style name="Widget.TabPageIndicator" parent="@style/Widget">
+        <item name="android:textAppearance">@style/TextAppearance.TabPageIndicator</item>
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/vpi__tab_indicator</item>
+        <item name="android:paddingLeft">22.0dip</item>
+        <item name="android:paddingTop">12.0dip</item>
+        <item name="android:paddingRight">22.0dip</item>
+        <item name="android:paddingBottom">12.0dip</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="TextAppearance.TabPageIndicator" parent="@style/Widget">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/vpi__light_theme</item>
+    </style>
+    <style name="Widget.IconPageIndicator" parent="@style/Widget">
+        <item name="android:layout_marginLeft">6.0dip</item>
+        <item name="android:layout_marginRight">6.0dip</item>
+    </style>
+    <style name="FlatButton" parent="@*android:style/TextAppearance.Small">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:paddingLeft">6.0dip</item>
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingRight">6.0dip</item>
+        <item name="android:paddingBottom">3.0dip</item>
+    </style>
+    <style name="LongButton" parent="@*android:style/TextAppearance.Medium">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/red_btn_bg</item>
+        <item name="android:padding">7.0dip</item>
+    </style>
+    <style name="Edit" parent="@*android:style/Widget.EditText">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Title" parent="@*android:style/TextAppearance.Large">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="order_row">
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingBottom">3.0dip</item>
+    </style>
+</resources>

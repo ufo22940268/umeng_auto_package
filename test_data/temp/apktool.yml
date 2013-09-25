@@ -1,0 +1,13 @@
+version: 1.5.2
+apkFileName: crazysight.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '8'
+  targetSdkVersion: '16'
+packageInfo:
+  cur_package: com.meishixing.crazysight
+  orig_package: com.meishixing.crazysight
+compressionType: false

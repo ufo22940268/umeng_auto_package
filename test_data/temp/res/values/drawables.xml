@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="dim">#ffff0000</item>
+    <item type="drawable" name="transparent">#00000000</item>
+    <item type="drawable" name="orange">#ffff7f66</item>
+    <item type="drawable" name="dim_orange">#ff884236</item>
+    <item type="drawable" name="blue">#ff4dbdff</item>
+    <item type="drawable" name="dim_blue">#ff296388</item>
+</resources>

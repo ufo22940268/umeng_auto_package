@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff7dcefd" android:paddingLeft="15.0dip" android:paddingTop="20.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/form" />
+    <com.meishixing.crazysight.widget.BgButton android:id="@id/login" android:background="@drawable/red_btn_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:button="@drawable/dim_btn" android:text="登陆" style="@style/LongButton" />
+    <LinearLayout android:gravity="center" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <View android:background="#ffffffff" android:layout_width="50.0dip" android:layout_height="2.0dip" />
+        <TextView android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="使用其他方式登陆" style="@android:style/TextAppearance.Small" />
+        <View android:background="#ffffffff" android:layout_width="70.0dip" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <LinearLayout android:background="@drawable/red_btn_bg" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/weibo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新浪微博" android:drawableLeft="@drawable/weibo_icon" />
+        </FrameLayout>
+        <View android:background="#33000000" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/tx_weibo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="腾讯微博" android:drawableLeft="@drawable/tx_weibo_icon" />
+        </FrameLayout>
+        <View android:background="#33000000" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/qq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="qq账号" android:drawableLeft="@drawable/qq_icon" />
+        </FrameLayout>
+    </LinearLayout>
+    <com.meishixing.crazysight.widget.BgButton android:id="@id/direct_order" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="非会员直接购买" style="@style/LongButton" />
+    <TextView android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/regiester" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="没有账号?免费注册账号" />
+    <com.meishixing.crazysight.widget.BgButton android:id="@id/back" android:background="@drawable/blue_btn_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="返回" style="@style/LongButton" />
+</LinearLayout>
