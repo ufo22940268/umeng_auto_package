@@ -3,7 +3,7 @@ all:
 
 .PHONY: test
 test:
-	python test.py && cd release/ &&  python -m SimpleHTTPServer
+	python test.py && cd release/
 
 .DEFAULT_GOAL := test
 
