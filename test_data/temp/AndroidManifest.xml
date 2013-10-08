@@ -95,7 +95,7 @@
   <activity android:name="com.umeng.fb.ContactActivity"/>
   <service android:enabled="true" android:name="com.baidu.location.f" android:process=":remote"/>
   <meta-data android:name="UMENG_APPKEY" android:value="52319d2d56240b6ecd0670e2"/>
-  <meta-data android:name="UMENG_CHANNEL" android:value="qq"/>
+  <meta-data android:name="UMENG_CHANNEL" android:value="wandoujia"/>
   <activity android:configChanges="keyboardHidden|orientation" android:name="cn.jpush.android.ui.PushActivity" android:theme="@*android:style/Theme.Translucent.NoTitleBar">
    <intent-filter>
     <action android:name="cn.jpush.android.ui.PushActivity"/>

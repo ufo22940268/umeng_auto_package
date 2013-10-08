@@ -3,7 +3,7 @@ all:
 
 .PHONY: test
 test:
-	python test.py && cd release/
+	python test.py
 
 .DEFAULT_GOAL := test
 

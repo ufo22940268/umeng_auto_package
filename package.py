@@ -24,6 +24,9 @@ def compress(inFn, channels):
                 if unicode(meta).find(u"UMENG_CHANNEL") != -1:
                     meta["android:value"] = channel;
 
+            vname = soup.find(u'manifest')['android:versionName']
+            print 'vname', vname
+
             outStr = soup.prettify();
 
         with open("test_data/temp/AndroidManifest.xml", "w") as xmlFile:
@@ -33,5 +36,5 @@ def compress(inFn, channels):
         subprocess.check_call((apktoolCmd + " b %s/temp %s/unsign-a.apk" % (TEST_DIR, TEST_DIR)).split());
 
         jarSignCmd = "java -jar tools/SignApk.jar ";
-        os.system(jarSignCmd + " meishixing.keystore meishigo meishixing meishigo %s/unsign-a.apk %s/%s.apk" % (TEST_DIR, RELEASE_DIR, channel.encode("utf-8")));
+        os.system(jarSignCmd + " meishixing.keystore meishigo meishixing meishigo %s/unsign-a.apk %s/%s-%s.apk" % (TEST_DIR, RELEASE_DIR, channel.encode("utf-8"), vname));
 
