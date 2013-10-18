@@ -26,6 +26,10 @@ def compress(inFn, channels):
 
             vname = soup.find(u'manifest')['android:versionName']
             print 'vname', vname
+            if soup.find(u'manifest')['package'] == 'com.niunan':
+                pname = 'meishixing'
+            else:
+                pname = 'crazysight'
 
             outStr = soup.prettify();
 
@@ -36,5 +40,5 @@ def compress(inFn, channels):
         subprocess.check_call((apktoolCmd + " b %s/temp %s/unsign-a.apk" % (TEST_DIR, TEST_DIR)).split());
 
         jarSignCmd = "java -jar tools/SignApk.jar ";
-        os.system(jarSignCmd + " meishixing.keystore meishigo meishixing meishigo %s/unsign-a.apk %s/%s-%s.apk" % (TEST_DIR, RELEASE_DIR, channel.encode("utf-8"), vname));
+        os.system(jarSignCmd + " meishixing.keystore meishigo meishixing meishigo %s/unsign-a.apk %s/%s-%s-%s.apk" % (TEST_DIR, RELEASE_DIR, pname, channel.encode("utf-8"), vname));
 
