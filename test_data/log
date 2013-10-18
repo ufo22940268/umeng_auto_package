@@ -1,2 +1,0 @@
-jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore 51zhangdan.keystore a.apk 51zhangdan.keystore
-

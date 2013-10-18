@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:background="@color/blue" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0px" android:layout_height="0.0px" />
-    <EditText android:id="@id/search_field" android:background="@drawable/search_field" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="搜索城市名，景区名" android:layout_weight="1.0" android:imeOptions="actionSearch" />
-    <TextView android:textColor="#ffffffff" android:id="@id/do_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="搜索" style="@android:style/TextAppearance.Medium" />
-</LinearLayout>
